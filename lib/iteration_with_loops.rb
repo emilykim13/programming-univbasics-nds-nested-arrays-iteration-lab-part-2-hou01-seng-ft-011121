@@ -17,22 +17,22 @@ array_2 = [
   [5,1,3],
   [4,3,0] 
 ]
-  array_index = 0
-  while array_index < src.count do
-    element_index = 0 
-  
-    while element_index > src[array_index].count do
-      if element_index = 0 
-        min_element = src[array_index][element_index]
-        src[array_index][element_index]
-      if src[array_index][element_index] < min_element
-        min_element = src[array_index][element_index]
-      end
-      element_index += 1 
-    end
-
-    array_index += 1 
-  end
-
-find_min_in_nested_arrays(array_1)
+ new_array=[]
+ count = 0
+ while count < src.length do
+   element_index = 0
+   min_value = 100
+   while element_index < src[count].length do
+     if src[count][element_index] < min_value
+            min_value = src[count][element_index]
+     end
+     element_index +=1
+   end
+   new_array.push(min_value)
+#  for  src[i] < min_value
+#    src.push(min_value)
+    count +=1
+#  end
+ end
+ new_array
 end
